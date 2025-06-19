@@ -82,3 +82,39 @@ A tag <strong> em HTML é usada para indicar que o texto que ela envolve tem for
 
 <!-- O que é a tag <fieldset> no HTML?
 A tag <fieldset> é um elemento HTML que serve para agrupar elementos relacionados dentro de um formulário. Ela cria uma caixa visual em torno de um conjunto de controles de formulário (como campos de texto, radio buttons, checkboxes, etc.), ajudando a organizar o formulário e a melhorar a acessibilidade e a usabilidade.  a tag <legend> (que sempre deve ser usada em conjunto) fornece um contexto importante.  -->
+
+<!-- A tag <video> permite que os navegadores exibam vídeos sem a necessidade de plugins externos (como o Flash, que era comum no passado). Ela fornece uma forma padronizada e acessível de adicionar vídeos ao seu site. 
+
+Atributos importantes da tag <video>
+src: Especifica o URL do ficheiro de vídeo. No entanto, é mais comum usar a tag <source> dentro de <video> para suportar diferentes formatos de vídeo.
+controls: Adiciona controlos de reprodução padrão (reproduzir, pausar, volume, ecrã inteiro, etc.) ao vídeo. É altamente recomendável incluir este atributo para que os utilizadores possam controlar o vídeo.
+width e height: Define a largura e a altura do vídeo, em pixels.
+autoplay: Faz com que o vídeo comece a reproduzir automaticamente assim que a página carregar. Use com moderação, pois pode ser irritante para os utilizadores.
+loop: Faz com que o vídeo volte a reproduzir desde o início quando terminar.
+muted: Silencia o áudio do vídeo por padrão.
+poster: Especifica uma imagem para ser exibida enquanto o vídeo está a carregar ou até que o utilizador comece a reproduzir.
+preload: Especifica se e como o vídeo deve ser carregado quando a página carrega. Os valores são "none" (não carregar), "metadata" (carregar apenas metadados) ou "auto" (carregar o vídeo inteiro, se o navegador achar adequado).
+<source>: Permite especificar múltiplos ficheiros de vídeo em diferentes formatos (mp4, webm, ogg). O navegador escolherá o formato que melhor suporta.  A tag <track> é usada para especificar trilhas de texto cronometradas (timed text tracks) para elementos de mídia (<audio> e <video>). Ela permite adicionar legendas, closed captions, descrições, capítulos e outros metadados que são sincronizados com a reprodução do vídeo ou áudio. "kind"	(O mais importante) Define o tipo de trilha de texto. Os valores possíveis são:&lt;br>• subtitles: Legendas para traduzir o diálogo para outros idiomas.&lt;br>• captions: Transcrições do diálogo e de sons importantes (ex: "música tensa", "[telefone toca]") no mesmo idioma do áudio. Ideal para pessoas com deficiência auditiva.&lt;br>• descriptions: Descrições textuais do conteúdo visual do vídeo, para serem lidas por um leitor de tela para pessoas com deficiência visual.&lt;br>• chapters: Títulos de capítulos, usados para criar uma navegação dentro do vídeo.&lt;br>• metadata: Dados para serem usados por JavaScript. Não é visível para o usuário.
+
+"src"	(Obrigatório) A URL (caminho) para o arquivo da trilha. O formato padrão e mais comum é o WebVTT (.vtt).
+
+"srclang"	(Obrigatório para subtitles) Especifica o idioma da trilha (ex: pt-br para Português do Brasil, en para Inglês, es para Espanhol).
+
+"label"	O título da trilha que será exibido no menu de legendas do player de vídeo. Ex: "Português (Brasil)".
+
+"default"	Um atributo booleano. Se presente, indica que esta trilha deve ser habilitada por padrão, a menos que as configurações do navegador do usuário especifiquem outro idioma.
+.-->
+
+<!-- O que é a tag <iframe> no HTML?
+A tag <iframe> (de "inline frame") é um elemento HTML usado para incorporar outro documento HTML (uma outra página web) dentro do documento HTML atual. Ele cria uma "janela" ou "moldura" independente dentro da sua página, exibindo o conteúdo de uma URL externa sem que o usuário precise sair da sua página.
+
+Pense no <iframe> como se você estivesse colocando um pequeno navegador dentro do seu navegador, mostrando um site diferente. Atributos importantes da tag <iframe>
+src: (Obrigatório) Especifica a URL da página que você deseja incorporar.
+width e height: Definem a largura e a altura do iframe, em pixels ou em porcentagem. Se não especificados, o navegador usa um tamanho padrão.
+frameborder: (Obsoleto no HTML5, mas ainda usado para compatibilidade). Controla se uma borda é exibida ao redor do iframe. Use CSS (border: none;) para um controle moderno.
+allow: (Novo no HTML5) Permite ou restringe certas funcionalidades dentro do iframe, como acesso à câmera, microfone, geolocalização, etc. Por exemplo: allow="fullscreen; accelerometer; gyroscope; microphone;".
+sandbox: (Importante para segurança!) Ativa um conjunto extra de restrições para o conteúdo incorporado, aumentando a segurança. Se este atributo estiver presente, o conteúdo do iframe é tratado como vindo de uma origem única e restrita. Sem nenhum valor, ele aplica todas as restrições padrão. Você pode relaxar restrições específicas (ex: sandbox="allow-forms allow-scripts").
+loading: (Novo no HTML) Sugere ao navegador como carregar o iframe. eager (carrega imediatamente) ou lazy (carrega quando o iframe está próximo da viewport do usuário).
+title: (Altamente recomendado para acessibilidade!) Fornece um título descritivo para o conteúdo do iframe, que é lido por leitores de tela. -->
+
+<!-- Claro! A tag <audio> em HTML é usada para incorporar conteúdo de áudio em uma página da web, como músicas, podcasts ou efeitos sonoros, sem a necessidade de um plugin externo (como o antigo Flash Player).  A forma mais simples de usar a tag <audio> é especificando o arquivo de áudio no atributo src e incluindo o atributo controls para que o navegador exiba os controles padrão (play, pause, volume, etc.).-->
