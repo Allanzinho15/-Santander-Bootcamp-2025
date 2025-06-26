@@ -118,3 +118,42 @@ loading: (Novo no HTML) Sugere ao navegador como carregar o iframe. eager (carre
 title: (Altamente recomendado para acessibilidade!) Fornece um título descritivo para o conteúdo do iframe, que é lido por leitores de tela. -->
 
 <!-- Claro! A tag <audio> em HTML é usada para incorporar conteúdo de áudio em uma página da web, como músicas, podcasts ou efeitos sonoros, sem a necessidade de um plugin externo (como o antigo Flash Player).  A forma mais simples de usar a tag <audio> é especificando o arquivo de áudio no atributo src e incluindo o atributo controls para que o navegador exiba os controles padrão (play, pause, volume, etc.).-->
+
+<!-- O que é a Tag <table>?
+A tag <table> em HTML é o elemento principal usado para criar uma tabela na sua página web. Pense nela como o contêiner, a "caixa" que envolve todos os outros elementos que formam a tabela, como as linhas, colunas e células.
+
+Seu propósito fundamental é apresentar dados tabulares, ou seja, informações que fazem sentido quando organizadas em uma grade de linhas e colunas.
+
+A "Família" de Tags da Tabela
+A tag <table> raramente é usada sozinha. Ela funciona em conjunto com uma "família" de outras tags para construir a estrutura completa. As principais são:
+
+<tr> (Table Row): Cria uma linha dentro da tabela. Toda a informação é organizada em linhas.
+<td> (Table Data): Cria uma célula de dados padrão dentro de uma linha. É onde você coloca a maior parte do seu conteúdo.
+<th> (Table Header): Cria uma célula de cabeçalho, geralmente usada na primeira linha para dar nome às colunas. O texto dentro de um <th> é, por padrão, em negrito e centralizado, indicando que é um título.
+Para uma estrutura mais organizada e semântica (com mais significado para o navegador e para leitores de tela), usamos também:
+
+<thead>: Agrupa as linhas do cabeçalho da tabela.
+<tbody>: Agrupa as linhas do corpo (o conteúdo principal) da tabela.
+<tfoot>: Agrupa as linhas do rodapé da tabela. -->
+
+<!--  As tags <header>, <main> e <footer> são fundamentais para estruturar uma página web de forma moderna e significativa. Elas são a base do que chamamos de HTML Semântico. 
+
+A tag <header> representa o conteúdo introdutório de uma página ou de uma seção. Pense nela como o cabeçalho de um jornal ou a capa de um livro. 
+
+A tag <main> é uma das mais importantes. Ela deve envolver o conteúdo principal e único daquela página específica. É o motivo pelo qual o usuário visitou aquela URL. 
+
+A tag <footer> representa o rodapé da página ou de uma seção. É onde geralmente colocamos informações secundárias ou de fechamento.
+
+A tag <section> é outra peça fundamental do HTML Semântico, e entender a diferença entre ela, <article> e <div> é um passo importante para escrever um código moderno e de alta qualidade.
+
+A tag <aside> é outra peça importante do quebra-cabeça do HTML Semântico. Entender seu propósito ajuda a criar layouts de página ainda mais significativos
+
+A tag <nav> é a última peça do quebra-cabeça das principais tags semânticas de layout que estávamos explorando. Ela tem um propósito muito específico e importante..
+
+A tag <article> é um elemento semântico do HTML que define um conteúdo completo e autossuficiente. Pense nela como um item que, mesmo se fosse retirado da sua página e colocado em outro lugar (como um feed de notícias RSS ou em outro site), ainda faria sentido por si só.
+
+A tag <figure> é um elemento semântico usado para "envelopar" ou agrupar um conteúdo autossuficiente que serve como ilustração para o conteúdo principal. Esse conteúdo é geralmente referenciado no texto, mas pode ser movido para outra parte do documento (como um apêndice) sem afetar o fluxo principal da leitura.
+
+A tag <figcaption> (Figure Caption) é usada para fornecer uma legenda ou um título para o conteúdo dentro da tag <figure>. A associação entre <figure> e <figcaption> é o que dá tanto poder a elas. Ela cria uma ligação semântica forte entre a ilustração e sua descrição.
+
+A tag <picture> é um dos recursos mais poderosos e importantes do HTML moderno, especialmente para criar sites rápidos e que se adaptam bem a diferentes dispositivos (design responsivo).--> 
