@@ -157,3 +157,101 @@ A tag <figure> é um elemento semântico usado para "envelopar" ou agrupar um co
 A tag <figcaption> (Figure Caption) é usada para fornecer uma legenda ou um título para o conteúdo dentro da tag <figure>. A associação entre <figure> e <figcaption> é o que dá tanto poder a elas. Ela cria uma ligação semântica forte entre a ilustração e sua descrição.
 
 A tag <picture> é um dos recursos mais poderosos e importantes do HTML moderno, especialmente para criar sites rápidos e que se adaptam bem a diferentes dispositivos (design responsivo).--> 
+
+
+# Css
+<!-- 1. Seletor de Tag/Tipo
+O seletor de tag, também conhecido como seletor de tipo, é usado para selecionar todos os elementos HTML de um determinado tipo. Por exemplo, se você quiser que todos os parágrafos (<p>) em sua página tenham o texto azul, você usaria o seletor de tag. -->
+
+<!-- O seletor de classe seleciona elementos com base no valor do seu atributo class. A grande vantagem é que você pode aplicar a mesma classe a múltiplos elementos em uma página, permitindo que eles compartilhem o mesmo estilo. Para definir um seletor de classe no CSS, utiliza-se um ponto (.) seguido pelo nome da classe. -->
+
+<!-- 3. Seletor de ID
+O seletor de ID é usado para selecionar um único elemento com um atributo id específico. A principal característica de um id é que ele deve ser único em toda a página HTML. Isso o torna ideal para estilizar um elemento específico, como o cabeçalho principal ou o rodapé. No CSS, um seletor de ID é definido com um caractere de cerquilha (#) seguido pelo nome do ID. -->
+
+<!-- 4. Seletor Universal
+O seletor universal, representado por um asterisco (*), seleciona todos os elementos na página. Ele é frequentemente usado para aplicar um "reset" de estilos básicos, como remover margens e preenchimentos padrão que os navegadores aplicam. -->
+
+<!-- 5. Seletor de Atributo
+O seletor de atributo permite selecionar elementos com base na presença ou no valor de um atributo HTML. Isso oferece uma forma poderosa e flexível de aplicar estilos.
+
+Sintaxe Básica:
+
+[atributo]: Seleciona todos os elementos que possuem o atributo especificado.
+
+[atributo="valor"]: Seleciona todos os elementos onde o valor do atributo é exatamente igual ao especificado.
+
+[atributo~="valor"]: Seleciona elementos onde o atributo contém a palavra "valor" em uma lista de valores separados por espaço.
+
+[atributo^="valor"]: Seleciona elementos cujo valor do atributo começa com "valor".
+
+[atributo$="valor"]: Seleciona elementos cujo valor do atributo termina com "valor".
+
+[atributo*="valor"]: Seleciona elementos cujo valor do atributo contém "valor" em qualquer posição. -->
+
+<!-- A propriedade width é usada para definir a largura da área de conteúdo de um elemento. -->
+
+<!-- A propriedade height é usada para definir a altura da área de conteúdo de um elemento. Ela controla a dimensão vertical, complementando o controle horizontal que a width oferece. -->
+
+<!-- A propriedade margin do CSS é usada para criar espaço fora de um elemento, em volta de suas bordas. É o espaçamento externo que "empurra" outros elementos para longe. -->
+
+<!-- O valor inherit é uma palavra-chave especial e poderosa em CSS que pode ser aplicada a praticamente qualquer propriedade. Ela instrui um elemento a "herdar", ou seja, a adotar o mesmo valor computado de seu elemento pai direto para aquela propriedade específica.
+
+ Por padrão, em CSS, algumas propriedades são herdadas e outras não.
+
+Propriedades Herdadas por Padrão: Propriedades relacionadas a texto geralmente são herdadas. Se você define color: blue; e font-family: Arial; no elemento <body>, todos os parágrafos (<p>) e títulos (<h1>) dentro dele automaticamente "herdarão" essa cor e fonte, a menos que você especifique o contrário.
+
+Exemplos: color, font-family, font-size, font-weight, line-height, text-align.
+
+Propriedades Não Herdadas por Padrão: Propriedades relacionadas ao layout e ao modelo de caixa (box model) geralmente não são herdadas. Se você define uma width, padding, margin ou border em um <div> pai, os <div> filhos dentro dele não terão essas mesmas propriedades; eles voltarão aos seus valores padrão (geralmente auto ou 0).
+
+Exemplos: width, height, padding, margin, border, background-color.
+
+Para que serve o inherit?
+O valor inherit permite que você force a herança em propriedades que normalmente não são herdadas. Ele dá a você controle explícito sobre o fluxo de estilos, tornando seu código mais limpo e fácil de manter (seguindo o princípio DRY - Don't Repeat Yourself).
+
+Em vez de repetir o mesmo valor em vários elementos filhos, você pode defini-lo uma vez no pai e instruir os filhos a herdá-lo.-->
+
+<!-- A propriedade padding do CSS é usada para criar espaço interno em um elemento, ou seja, o espaço entre o conteúdo do elemento e a sua própria borda (border). Pense nela como o "preenchimento" ou "estofamento" de uma caixa. -->
+
+<!-- Excelente! Você chegou a uma das propriedades mais importantes e que mais "salvam vidas" no CSS moderno: box-sizing.
+
+Entender box-sizing é a chave para eliminar muitas das frustrações comuns ao criar layouts, especialmente aquelas relacionadas à largura (width) e altura (height) dos elementos. -->
+
+<!-- O currentColor é uma palavra-chave (keyword) especial em CSS que funciona como uma variável dinâmica para a cor. Essencialmente, ela sempre representa o valor computado da propriedade color de um elemento.
+
+Quando você usa currentColor no valor de uma propriedade, o navegador substitui essa palavra-chave pelo valor atual da propriedade color daquele elemento. Como a propriedade color é herdada por padrão, isso permite que outras propriedades "peguem carona" nessa herança. -->
+
+<!-- Com certeza. A propriedade object-fit é uma ferramenta de CSS extremamente útil para controlar como o conteúdo de elementos substituídos, principalmente <img> e <video>, se ajusta dentro das dimensões que você define.
+
+O Problema que object-fit Resolve
+Imagine que você tem um card de perfil e quer que todas as fotos dos usuários sejam exibidas como um quadrado de 150px por 150px. O problema é que os usuários podem enviar fotos de qualquer tamanho e proporção (algumas verticais, outras horizontais, outras panorâmicas). -->
+
+<!-- Para que serve object-position?
+A sua principal utilidade aparece quando você usa object-fit: cover ou object-fit: contain.
+
+Com object-fit: cover: A imagem é ampliada para cobrir todo o espaço, e partes dela são cortadas. Por padrão, o navegador centraliza a imagem, o que pode fazer com que o assunto principal (como o rosto de uma pessoa) seja cortado. object-position permite que você desloque a imagem para controlar qual parte dela fica visível.
+
+Com object-fit: contain: A imagem é reduzida para caber no espaço, o que pode criar "barras" vazias. object-position permite que você posicione a imagem dentro dessas barras (por exemplo, alinhada à esquerda, à direita, no topo, etc.). -->
+
+<!--  que background-image pode fazer?
+A propriedade background-image aceita principalmente dois tipos de valores:
+
+Imagens Externas com url(): Este é o uso mais comum, onde você aponta para um arquivo de imagem (.jpg, .png, .svg, .gif, .webp, etc.). 
+Gradientes Gerados por CSS: O CSS pode gerar imagens de gradiente que se comportam como imagens de fundo. Isso é extremamente útil para criar fundos suaves e modernos sem a necessidade de carregar um arquivo de imagem.
+
+linear-gradient(): Cria um gradiente linear.
+
+radial-gradient(): Cria um gradiente circular ou elíptico.
+
+conic-gradient(): Cria um gradiente cônico (como um cone visto de
+
+repeating-linear-gradient() do CSS cria uma imagem de fundo que consiste em um gradiente linear que se repete de forma contínua e automática. É uma ferramenta poderosa para gerar padrões como listras e outros efeitos visuais sem a necessidade de um arquivo de imagem.-->
+
+<!-- Com certeza. A propriedade background-size do CSS é uma das mais importantes para controlar imagens de fundo, pois ela define o tamanho da imagem de fundo de um elemento.
+
+Ela trabalha em conjunto com background-image e é crucial para criar layouts responsivos e garantir que suas imagens de fundo se comportem da maneira desejada.
+
+ Para que serve background-size?
+Sem o background-size, uma imagem de fundo é exibida em seu tamanho original. Isso pode ser um problema, pois a imagem pode ser muito grande e ser cortada, ou muito pequena e se repetir de forma indesejada.
+
+background-size permite que você redimensione a imagem para que ela se ajuste melhor ao seu contêiner.-->
