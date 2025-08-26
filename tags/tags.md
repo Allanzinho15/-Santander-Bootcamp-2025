@@ -701,4 +701,13 @@ break-spaces: Funciona de forma muito semelhante ao pre-wrap, preservando espaç
 
  -->
 
+<!-- Você provavelmente está procurando pela propriedade word-wrap, que agora é oficialmente chamada de overflow-wrap no CSS.
 
+A propriedade overflow-wrap permite que o navegador quebre palavras longas ou strings contínuas (como URLs) que, de outra forma, transbordariam para fora de seus contêineres.
+
+Sintaxe e Valores
+Embora o nome moderno seja overflow-wrap, a maioria dos navegadores ainda suporta word-wrap por razões de compatibilidade.
+
+normal (padrão): As palavras só quebram em pontos permitidos (como espaços ou hífens). Palavras longas não serão quebradas e podem transbordar do contêiner.
+
+break-word: Permite que palavras longas e inquebráveis sejam forçadas a quebrar em qualquer ponto para evitar que transbordem. A quebra só ocorre se a palavra não couber inteira na linha. -->
